@@ -50,9 +50,16 @@ def test_built_files_exist():
         print(f"  {Colors.YELLOW}Run 'mkdocs build' first{Colors.RESET}")
         return False
     
+    # Primary files that should always be in build
     files_to_check = [
         "resume.pdf",
         "resume.docx"
+    ]
+    
+    # Optional duplicate files (may or may not be in build)
+    optional_files = [
+        "resume 2.pdf",
+        "resume 2.docx"
     ]
     
     all_exist = True
@@ -64,6 +71,13 @@ def test_built_files_exist():
         else:
             print(f"  {Colors.RED}✗{Colors.RESET} {file} NOT FOUND in build")
             all_exist = False
+    
+    # Check optional files without failing the test
+    for file in optional_files:
+        file_path = base_path / file
+        if file_path.exists():
+            size = file_path.stat().st_size
+            print(f"  {Colors.GREEN}✓{Colors.RESET} {file} exists in build ({size:,} bytes)")
     
     return all_exist
 
@@ -163,8 +177,8 @@ def test_production_site_accessibility():
                 print(f"  {Colors.YELLOW}○{Colors.RESET} {url_path} returned {response.status_code}")
         except requests.exceptions.RequestException as e:
             # Network errors are expected in sandboxed environments
-            if isinstance(e, (requests.exceptions.ConnectionError, 
-                            requests.exceptions.Timeout)):
+            if isinstance(e, (requests.exceptions.ConnectionError,
+                             requests.exceptions.Timeout)):
                 print(f"  {Colors.YELLOW}○{Colors.RESET} {url_path} - Network unavailable (sandboxed)")
                 network_available = False
             else:
