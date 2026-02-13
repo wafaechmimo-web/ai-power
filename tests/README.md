@@ -21,6 +21,14 @@ Basic navigation tests including:
 ### `test_production.py`
 Wrapper for testing the production site at https://anton-abyzov.github.io/ai-power
 
+### `test_pdf_downloads.py`
+Tests PDF and document download accessibility:
+- Verifies local files exist in repository
+- Verifies files are included in MkDocs build
+- Verifies download links are present in HTML pages
+- Tests local server accessibility (optional)
+- Tests production site accessibility (optional)
+
 ## 🚀 Running Tests
 
 ### Prerequisites
@@ -40,6 +48,9 @@ python3 tests/test_navigation_e2e.py
 
 # Test production site
 python3 tests/test_production.py
+
+# Test PDF downloads
+python3 tests/test_pdf_downloads.py
 
 # Run all tests with pytest
 pytest tests/ -v

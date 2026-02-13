@@ -47,6 +47,31 @@ An AI Resume Agent powered by Claude Sonnet 4.5 that:
 
 ---
 
+## 📥 Example Outputs (Download & Preview)
+
+Want to see what the AI generates? Download example resume outputs:
+
+### Resume Examples (PDF & Word)
+- **[📄 Download Resume PDF](workspace/outputs/resume.pdf)** - Professional software engineer resume example
+- **[📄 Download Resume Word (.docx)](workspace/outputs/resume.docx)** - Editable Word format
+
+### How to Access More Examples
+After you clone the repository, you'll find more examples in:
+```bash
+# Navigate to outputs folder
+cd docs/episodes/02-resume-fine-tuner/workspace/outputs/
+
+# List all example files
+ls -la
+```
+
+**What's Inside:**
+- ✅ Generated resume examples in PDF format
+- ✅ Word documents (.docx) for easy editing
+- ✅ Multiple profession examples (software, marketing, real estate)
+
+---
+
 ## 🎬 If You're Creating the Video
 
 **Read this order:**

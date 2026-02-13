@@ -167,6 +167,9 @@ nav:
   - Episode 02:
     - "🎯 Start Here": episodes/02-resume-fine-tuner/🎯 START_HERE.md
     - "📹 Full Script": episodes/02-resume-fine-tuner/📹 THE_FULL_SCRIPT.md
+    - Workspace:
+      - "📖 Workspace Guide": episodes/02-resume-fine-tuner/workspace/README.md
+      - "📥 Example Outputs": episodes/02-resume-fine-tuner/workspace/EXAMPLES.md
     - Prompts:
       - "📝 Resume Fine-Tuner Agent": episodes/02-resume-fine-tuner/prompts/resume-fine-tuner-agent.md
       - "📋 All Claude Prompts": episodes/02-resume-fine-tuner/prompts/ALL_CLAUDE_PROMPTS.md
