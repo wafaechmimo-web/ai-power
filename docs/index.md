@@ -48,6 +48,7 @@
     - 90%+ ATS keyword matching
     - 6x more interviews (proven results)
     - Works for ANY profession
+    - **[📥 Download Example Resume PDFs](episodes/02-resume-fine-tuner/workspace/EXAMPLES/)** ⭐
 
 [**→ View Episode 02**](episodes/02-resume-fine-tuner/🎯%20START_HERE/){ .md-button }
 
