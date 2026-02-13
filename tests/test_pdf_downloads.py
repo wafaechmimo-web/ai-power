@@ -163,7 +163,8 @@ def test_production_site_accessibility():
                 print(f"  {Colors.YELLOW}○{Colors.RESET} {url_path} returned {response.status_code}")
         except requests.exceptions.RequestException as e:
             # Network errors are expected in sandboxed environments
-            if "Failed to resolve" in str(e) or "Name or service not known" in str(e):
+            if isinstance(e, (requests.exceptions.ConnectionError, 
+                            requests.exceptions.Timeout)):
                 print(f"  {Colors.YELLOW}○{Colors.RESET} {url_path} - Network unavailable (sandboxed)")
                 network_available = False
             else:

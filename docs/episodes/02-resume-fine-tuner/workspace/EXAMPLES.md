@@ -21,8 +21,8 @@ Real resume examples generated using Claude Sonnet 4.5 that demonstrate:
 
 #### Example 1: Senior Backend Engineer
 **Format Options:**
-- **[📄 Download PDF](outputs/resume.pdf)** (96 KB) - Clean, professional PDF format
-- **[📝 Download Word (.docx)](outputs/resume.docx)** (15 KB) - Editable Word document
+- **[📄 Download PDF](outputs/resume.pdf)** - Clean, professional PDF format
+- **[📝 Download Word (.docx)](outputs/resume.docx)** - Editable Word document
 
 **What's Inside:**
 - Tailored for backend engineering role
